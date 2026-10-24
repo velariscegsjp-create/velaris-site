@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Velaris Cegs</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Tela de Login -->
+    <div id="login-screen" class="screen active">
+        <div class="login-container">
+            <h1 class="logo">✦ Velaris <span class="logo-sub">Cegs</span></h1>
+            <p class="subtitle">COLLECTOR PORTAL</p>
+            <form id="login-form">
+                <input type="text" id="username" placeholder="@seu_usuario" required>
+                <input type="password" id="password" placeholder="Senha" required>
+                <button type="submit">Entrar</button>
+                <p id="login-error" class="error"></p>
+            </form>
+        </div>
+    </div>
+
+    <!-- Dashboard (Home) -->
+    <div id="dashboard-screen" class="screen">
+        <header>
+            <h1 class="logo">✦ Velaris <span class="logo-sub">Cegs</span></h1>
+            <div class="user-info">
+                <span id="user-display"></span>
+                <button id="logout-btn">Sair</button>
+            </div>
+        </header>
+        <main>
+            <section class="welcome">
+                <p class="welcome-back">WELCOME BACK</p>
+                <h2 id="welcome-message">Welcome back, <span id="username-welcome"></span> ♡</h2>
+                <p class="welcome-desc">suas claims, orders & collection em um lugar.</p>
+            </section>
+
+            <!-- Cartões de Resumo -->
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <p class="stat-label">CEGS ATIVAS</p>
+                    <p class="stat-value" id="stat-cegs">0</p>
+                </div>
+                <div class="stat-card">
+                    <p class="stat-label">ITENS EM CLAIM</p>
+                    <p class="stat-value" id="stat-claims">0</p>
+                </div>
+                <div class="stat-card">
+                    <p class="stat-label">GRUPOS</p>
+                    <p class="stat-value" id="stat-groups">0</p>
+                </div>
+                <div class="stat-card">
+                    <p class="stat-label">PAG. PENDENTES</p>
+                    <p class="stat-value" id="stat-pending">0</p>
+                </div>
+            </div>
+
+            <!-- Cegs Atuais (Pedidos) -->
+            <section class="current-cegs">
+                <div class="section-header">
+                    <h3>♡ Cegs Atuais</h3>
+                    <a href="#" class="ver-todos">VER TODOS →</a>
+                </div>
+                <div id="pedidos-list" class="pedidos-grid">
+                    <!-- Os pedidos serão carregados aqui via JS -->
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

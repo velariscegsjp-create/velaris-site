@@ -1,5 +1,5 @@
 // Substitua pela URL do seu Apps Script publicado
-const API_URL = 'https://script.googleusercontent.com/macros/echo?user_content_key=AUkAhnT7WkYVsQt8DHPxAc-jwZ8fLvTY6UTfSYWAOA0GrW9z6vxnH_babdiFwyILe842q0Rt8CKZ6I0boxMsJMFSOv_erY_cY9EhNvEq90WtqKhcpS5A11wibr1FJ7wktD0M6iebE6cD6omgRdC08eyc3NxV2pvy1ZBgAR7lHnhO8I8lu7-UMdfnIP8rDx40s_whyL8fiU15rX5cMmqktsxN3KBe4duVbc4euM4OhZQq4ZoPMmczAOt8-cH1D0cVFOsm_H8PII0_hg0_wSxLveBKsIeDRB_lZA&lib=MDdQCOdWAAHJ2-hqN3ibhiHr8NzWGHazY';
+const API_URL = 'https://script.google.com/macros/s/AKfycbxKkOijagfgYkvEcNQs-aUNVXoAwucZrZc4DcnEo9e6GOx9rIVZFHNptSjH5EsKOmYq/exec';
 
 // Elementos do DOM
 const loginScreen = document.getElementById('login-screen');
